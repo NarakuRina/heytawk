@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Đây không phải là Discord, và cũng không phải là Discord">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./output.css" />
+    <!-- Icon -->
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
+    <script src="main.js" defer></script>
+    <title>HeyTawk - Chắc Chắn Không Phải Là Discord (Tất Nhiên Rồi)</title>
+  </head>
+  <body class="text-white overflow-x-hidden antialiased">
+
+    <!-- Mobile Menu -->
+    <div id="sideMenu" class="top-0 right-0 fixed bg-white w-0 z-50 h-full transition-all duration-200">
+      <div class="p-5">
+        <div class="flex items-center justify-between text-black">
+          <!-- logo -->
+          
+          <!-- Close Icon -->
+          <svg id="closeBtn" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </div>
+        <ul class="text-black pt-10 flex flex-col gap-y-5">
+          <li class="bg-[#f6f6f6] text-primary cursor-pointer py-2 px-5 font-medium rounded">Trang Chủ</li>
+          <li class="py-2 px-5 font-medium hover:bg-[#f6f6f6] hover:text-primary cursor-pointer rounded">Tải Xuống</li>
+          <li class="py-2 px-5 font-medium hover:bg-[#f6f6f6] hover:text-primary cursor-pointer rounded">Leap</li>
+          <li class="py-2 px-5 font-medium hover:bg-[#f6f6f6] hover:text-primary cursor-pointer rounded">Khám Phá</li>
+          <li class="py-2 px-5 font-medium hover:bg-[#f6f6f6] hover:text-primary cursor-pointer rounded">Tài Liệu</li>
+          <li class="py-2 px-5 font-medium hover:bg-[#f6f6f6] hover:text-primary cursor-pointer rounded">Hỗ Trợ</li>
+          <li class="py-2 px-5 font-medium hover:bg-[#f6f6f6] hover:text-primary cursor-pointer rounded">Blog</li>
+          <li class="py-2 px-5 font-medium hover:bg-[#f6f6f6] hover:text-primary cursor-pointer rounded">Công Việc</li>
+        </ul>
+        <button class="px-4 py-2 rounded-full bg-primary text-white bottom-10 left-8 absolute flex items-center gap-x-1 hover:shadow-lg shadow-black/30 transition duration-200">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+          </svg> Tải Xuống Ngay </button>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="bg-primary">
+      <div class="flex items-center justify-between container py-6">
+        <!-- logo -->
+        <div class="flex items-center gap-x-4">
+          <img width="40" height="40" class="logo-3oeRIY" src="/images/avt.gif">
+          <h5 class="text-lg md:text-xl lg:text-2xl xl:text-3xl font-comfortaa pt-2">HeyTawk</h5>
+        </div>
+        <!-- navbar -->
+        <nav class="hidden lg:flex items-center gap-x-10">
+          <a href="#" class="navLink">Trang Chủ</a>
+          <a href="#" class="navLink">Tải Xuống</a>
+          <a href="#" class="navLink">Leap</a>
+          <a href="#" class="navLink">Khám Phá</a>
+          <a href="#" class="navLink">Tài Liệu</a>
+          <a href="#" class="navLink">Hỗ Trợ</a>
+          <a href="#" class="navLink">Blog</a>
+          <a href="#" class="navLink">Công Việc</a>
+        </nav>
+        <!-- login button -->
+        <div class="flex items-center gap-x-4">
+          <button class="btn-sm">Đăng Nhập</button>
+          <ion-icon id="menuBtn" name="menu-outline" class="text-white w-12 h-12 block lg:hidden cursor-pointer menuBtn"></ion-icon>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+
+      <!-- hero section -->
+      <section class="relative bg-primary bg-[url('images/hero/1.svg')] bg-no-repeat bg-center">
+        <img src="images/hero/2.svg" alt="" class="absolute bottom-0 right-0 xl:-left-60 w-[65%] xl:w-[40%] block md:hidden xl:block" />
+        <img src="images/hero/3.svg" alt="" class="absolute bottom-0 md:right-0 xl:-right-56 md:-[95%] w-[40%] hidden md:block" />
+        <div class="flex flex-col gap-8 items-start xl:items-center xl:justify-center container h-[84vh] xl:h-[78vh] pt-16 md:pt-20 xl:pt-0">
+          <h1 class="text-3xl lg:text-4xl xl:text-6xl tracking-widest">Chào mừng đến với HeyTawk</h1>
+          <p class="text-sm lg:text-lg xl:text-xl tracking-wider leading-normal text-justify">Mơi mà bạn buôn dưa lê cùng những người bạn và với những người bạn chưa từng gặp gỡ.</p>
+          <div class="flex flex-col xl:flex-row items-center gap-5">
+            <button class="btn btn-white flex items-center gap-x-1">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+              </svg> Tải Xuống </button>
+            <button class="btn btn-black">Mở Trên Trình Duyệt</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 2 -->
+      <section class="bg-white py-20 lg:py-28">
+        <div class="container flex flex-col md:flex-row items-center justify-between gap-y-5 md:gap-y-0">
+          <img src="images/section2.svg" alt="" class="md:w-6/12 lg:w-7/12" />
+          <div class="text-black md:w-5/12 lg:w-4/12">
+            <h3>Tạo hoặc tham gia các bang hội</h3>
+            <p style="word-spacing: 0.2rem">Những bang hội tại HeyTawk được phân chia với các kênh chủ đề khác nhau, nơi mà bạn có thể trò chuyện về những chủ đề khác nhau mà không làm tắc nghẽn một nhóm chat với quá nhiều người cùng trò chuyện.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3 -->
+      <section class="bg-[#f6f6f6] py-20 lg:py-28">
+        <div class="container flex flex-col md:flex-row-reverse items-center justify-between gap-y-5 md:gap-y-0">
+          <img src="images/section3.svg" alt="" class="md:w-6/12 lg:w-7/12" />
+          <div class="text-black md:w-5/12 lg:w-4/12">
+            <h3>Nơi mà trò chuyện thật dễ dàng</h3>
+            <p style="word-spacing: 0.2rem">Chọn một chỗ ngồi trong phòng đàm thoại mỗi khi bạn rảnh rỗi. Những người bạn sẽ nhìn thấy và ngay lập tức nhảy vào để trò chuyện mà không cần phải gọi điện.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 4 -->
+      <section class="bg-white py-20 lg:py-28">
+        <div class="container flex flex-col md:flex-row-reverse items-center justify-between gap-y-5 md:gap-y-0">
+          <img src="images/section4.svg" alt="" class="md:w-6/12 lg:w-7/12" />
+          <div class="text-black md:w-5/12 lg:w-4/12">
+            <h3>Phát triển thành một cộng đồng</h3>
+            <p style="word-spacing: 0.2rem">Phát triển bang hội của bạn từ một nhóm chat nhỏ thành nơi có hàng ngàn người tham gia. Cho các thành viên của bạn những vai trò đặc biệt, tạo những kênh chat riêng tư, và nhiều hơn thế.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 5 -->
+      <section class="bg-[#f6f6f6] py-20 lg:py-28">
+        <div class="container">
+          <div class="text-center text-black md:px-16 lg:px-32">
+            <h2 class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase pb-5">Luôn kết nối với những người bạn ở bất kì nơi đâu</h2>
+            <p>Chỉ cần có kết nối mạng Internet toàn cầu, bạn luôn có thể trò chuyện với những người bạn của mình, ngay cả khi mà mọi người đều đang cách nhau tới nửa vòng trái đất.</p>
+          </div>
+          <img src="images/section5.svg" alt="" class="w-full" />
+          <div class="text-black text-center bg-[url('images/star.svg')] bg-no-repeat bg-center">
+            <h4 class="text-xl md:text-3xl font-bold font-roboto pt-10 md:pt-24">Bạn đã sẵn sành chưa?</h4>
+            <button class="btn btn-blue mt-8 flex items-center justify-center gap-x-2 mx-auto">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+              </svg>
+              <span>Tải xuống ngay</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black py-20">
+      <div class="container flex flex-col md:flex-row items-start justify-between gap-10 md:gap-20">
+
+        <!-- Left Side -->
+        <div>
+          <h4 class="text-primary text-xl md:text-2xl lg:text-3xl xl:text-4xl font-comfortaa">HeyTawk</h4>
+          <h6 class="text-zinc-500 text-md lg:text-lg font-bold">Một sản phẩm của <b>RinaWork</b>
+            <!-- Social Icons -->
+            <div class="flex items-center gap-x-5 pt-4">
+              <ion-icon class="w-7 h-7 cursor-pointer hover:opacity-80" name="logo-facebook"></ion-icon>
+              <ion-icon class="w-7 h-7 cursor-pointer hover:opacity-80" name="logo-twitter"></ion-icon>
+              <ion-icon class="w-7 h-7 cursor-pointer hover:opacity-80" name="logo-youtube"></ion-icon>
+            </div>
+        </div>
+
+        <!-- Right Side -->
+        <div class="flex-1 grid grid-cols-2 lg:grid-cols-4 gap-10">
+
+          <ul class="flex flex-col gap-y-2">
+            <p class="text-sm text-primary">Sản Phẩm</p>
+            <a href="#" class="footerLink">Tải Xuống</a>
+            <a href="#" class="footerLink">Leap</a>
+            <a href="#" class="footerLink">Trạng Thái</a>
+            <a href="#" class="footerLink">Thông Tin</a>
+          </ul>
+
+          <ul class="flex flex-col gap-y-2">
+            <p class="text-sm text-primary">Công Ty</p>
+            <a href="#" class="footerLink">Giới Thiệu</a>
+            <a href="#" class="footerLink">Công Việc</a>
+            <a href="#" class="footerLink">Thương Hiệu</a>
+            <a href="#" class="footerLink">Tin Tức</a>
+          </ul>
+
+          <ul class="flex flex-col gap-y-2">
+            <p class="text-sm text-primary">Tài Nguyên</p>
+            <a href="#" class="footerLink">Hỗ Trợ</a>
+            <a href="#" class="footerLink">An Toàn</a>
+            <a href="#" class="footerLink">Blog</a>
+            <a href="#" class="footerLink">Nhà Phát Triển</a>
+          </ul>
+
+          <ul class="flex flex-col gap-y-2">
+            <p class="text-sm text-primary">Chính Sách</p>
+            <a href="#" class="footerLink">Điều Khoản</a>
+            <a href="#" class="footerLink">Bảo Mật</a>
+            <a href="#" class="footerLink">Cài Đặt Cookie</a>
+            <a href="#" class="footerLink">Hướng Dẫn</a>
+            <a href="#" class="footerLink">Vinh Danh</a>
+            <a href="#" class="footerLink">Giấy Phép</a>
+            <a href="#" class="footerLink">Kiểm Duyệt</a>
+          </ul>
+
+        </div>
+
+      </div>
+
+      <div class="container">
+        <div class="pt-10 flex flex-wrap gap-y-3 items-center justify-between border-t-2 border-primary mt-10">
+
+          <!-- logo -->
+          <div class="flex items-center gap-x-4">
+            <img width="40" height="40" class="logo-3oeRIY" src="/images/avt.gif">
+            <h5 class="text-md md:text-lg lg:text-xl xl:text-2xl font-comfortaa pt-2 text-primary">HeyTawk</h5>
+          </div>
+
+          <!-- Copyright -->
+          <div class="text-sm text-gray-400 flex gap-x-1 items-center">
+            <span>&copy; 2023 </span>
+            <a href="http:/www.rina.work" target="blank" class="text-primary hover:underline text-base">RinaWork</a>
+            <span>- All lefts reserved</span>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
